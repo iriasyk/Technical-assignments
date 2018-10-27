@@ -1,0 +1,176 @@
+@media (min-width: 320px) and (max-width: 768px) {
+  .main{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+  &__body {
+    padding: 0px;
+    margin-bottom: 25px;
+    height: auto;
+    width: 100%;
+    &--containerEnterprise {
+      position: relative;
+      transform: translate(0%, 0%);
+      &---blockSolid form{
+        height: auto;
+      }
+      &---blockSolid div{
+        display: none;
+      }
+      .button {
+        width: 185px;
+        height: 37px;
+        display: block;
+        > button {
+          width: 185px;
+          height: 37px;
+        }
+      }
+    }
+
+    &--containerPRO {
+      position: relative;
+      transform: translate(0%, 0%);
+      &---blockSolid form{
+        height: auto;
+      }
+      &---blockSolid div{
+        display: none;
+      }
+      .button {
+        width: 185px;
+        height: 37px;
+        display: block;
+        > button {
+          width: 185px;
+          height: 37px;
+        }
+      }
+    }
+    &--redImage {
+      display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .main{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    &__body {
+      padding: 0px;
+      margin-bottom: 25px;
+      height: auto;
+      width: 100%;
+      &--containerEnterprise {
+        position: relative;
+        transform: translate(0%, 0%);
+        &---blockSolid form{
+          height: auto;
+        }
+        //&---blockSolid div{
+        //  display: none;
+        //}
+        .button {
+          width: 185px;
+          height: 37px;
+          display: block;
+          > button {
+            width: 185px;
+            height: 37px;
+          }
+        }
+      }
+
+      &--containerPRO {
+        position: relative;
+        transform: translate(0%, 0%);
+        &---blockSolid form{
+          height: auto;
+        }
+        //&---blockSolid div{
+        //  display: none;
+        //}
+        .button {
+          width: 185px;
+          height: 37px;
+          display: block;
+          > button {
+            width: 185px;
+            height: 37px;
+          }
+        }
+      }
+      &--redImage {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+  .main{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    &__body {
+      padding: 0px;
+      margin-bottom: 25px;
+      height: auto;
+      width: 100%;
+      &--containerEnterprise {
+        position: relative;
+        transform: translate(0%, 0%);
+        &---blockSolid form{
+          height: auto;
+        }
+        //&---blockSolid div{
+        //  display: none;
+        //}
+        .button {
+          width: 185px;
+          height: 37px;
+          display: block;
+          > button {
+            width: 185px;
+            height: 37px;
+          }
+        }
+      }
+
+      &--containerPRO {
+        position: relative;
+        transform: translate(0%, 0%);
+        &---blockSolid form{
+          height: auto;
+        }
+        //&---blockSolid div{
+        //  display: none;
+        //}
+        .button {
+          width: 185px;
+          height: 37px;
+          display: block;
+          > button {
+            width: 185px;
+            height: 37px;
+          }
+        }
+      }
+      &--redImage {
+        display: none;
+      }
+    }
+  }
+}

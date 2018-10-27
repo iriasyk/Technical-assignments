@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=utf-8"/>
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link type="text/css" rel="stylesheet" href="css/mobile-main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="main">
+        <div class="main__header">
+            {% include "src/tmp/header.html" %}
+        </div>
+        <div class="main__body">
+            <div class="main__body--redImage">
+                {% include "src/tmp/image.html" %}
+            </div>
+            <div class="main__body--containerPRO">
+                {% include "src/tmp/containerPro.html" %}
+            </div>
+        </div>
+        <div class="main__body">
+            <div class="main__body--containerEnterprise">
+                {% include "src/tmp/containerEnterprise.html" %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

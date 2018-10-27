@@ -1,0 +1,245 @@
+@import "variables";
+@import "settings";
+@import "fonts";
+.main {
+  z-index: 0;
+  position: relative;
+  &__header {
+    text-align: center;
+    font-family: $fontForHeader;
+    color: black;
+    > h1 {
+      font-size: $fontSizeForHeaderUpper;
+      color: $colorTextH1;
+    }
+    > p {
+      font-size: $fontSizeForHeaderLower;
+      color: $colorTextPandLabel;
+    }
+  }
+  &__body {
+    background-color: $backGroundBody;
+    padding: 25px;
+    z-index: 1;
+    margin-bottom: 25px;
+    height: 345px;
+    &--redImage{
+      width: 158px;
+      position: relative;
+      left: 88.5%;
+      transform: translate(-3%, -23.9%);
+      height: 158px;
+      }
+    &--redImage div{
+      color: white;
+      font-family: 'Avenir LT Std 95 Black', sans-serif;
+      font-weight: bold;
+      font-size: 15px;
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      transform: rotate(45deg) translate(53%, 1%);
+    }
+    &--containerEnterprise{
+      form > p:nth-child(1) {
+        font-size: $SizeTextForPro;
+        color: #83ce00;
+        font-family: 'Arvo';
+      }
+      form > p:nth-child(2) {
+        font-size: $SizeTextFor40month;
+        color: $ColorTextForPro40monthETC;
+        font-family: 'Avenir LT Std 95 Black', sans-serif;
+        margin-top: -10px;
+      }
+      form > p {
+        font-weight: bold;
+        padding-left: 15px;
+      }
+      legend {
+        font-family: 'Avenir LT Std 95 Black', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: $ColorTextForPro40monthETC;
+        padding: 3px 30px;
+        margin-bottom: 8px;
+        #basic {
+          color: #1eeffc;
+        }
+      }
+      .checkbox {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+      .checkbox span{
+        line-height: 20px;;
+      }
+      .checkbox label {
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 0;
+        background: #eee;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+      }
+      .checkbox label:after {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 5px;
+        background: transparent;
+        top: 5px;
+        left: 4px;
+        border: 3px solid #333;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+      }
+      .checkbox label:hover::after {
+        opacity: 0.5;
+      }
+      .checkbox input[type=checkbox]:checked + label:after {
+        opacity: 1;
+      }
+      span {
+        font-family: 'Avenir LT Std 45 Book', sans-serif;
+        color: $colorTextPandLabel;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 12px;
+        margin-top: 3px;
+      }
+      fieldset {
+        border: none;
+      }
+      .button {
+        width: 200px;
+        height: 45px;
+        > button {
+          width: 200px;
+          height: 45px;
+          background-color: #3397c9;
+          outline: none;
+          border: none;
+          color: white;
+          text-align: center;
+          &:focus {
+            background-color: #83b2ca;
+          }
+        }
+      }
+      &---blockSolid{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        > div > .img1{
+          margin-left: 50px;
+        }
+      }
+    }
+    &--containerPRO {
+      position: relative;
+      transform: translate(0%, -45%);
+      form > p:nth-child(1) {
+        font-size: $SizeTextForPro;
+        color: $ColorTextForPro;
+        font-family: 'Arvo';
+      }
+      form > p:nth-child(2) {
+        font-size: $SizeTextFor40month;
+        color: $ColorTextForPro40monthETC;
+        font-family: 'Avenir LT Std 95 Black', sans-serif;
+        margin-top: -10px;
+      }
+      form > p {
+        font-weight: bold;
+        padding-left: 15px;
+      }
+      legend {
+        font-family: 'Avenir LT Std 95 Black', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: $ColorTextForPro40monthETC;
+        padding: 3px 30px;
+        margin-bottom: 8px;
+        #basic {
+          color: #ffe402;
+        }
+      }
+      .checkbox {
+        width: 100%;
+        position: relative;
+        display: flex;
+
+      }
+      .checkbox label {
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 0;
+        left: 0;
+        background: #eee;
+        border: 1px solid #ddd;
+        border-radius: 50%;
+      }
+      .checkbox label:after {
+        opacity: 0;
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 5px;
+        background: transparent;
+        top: 5px;
+        left: 4px;
+        border: 3px solid #333;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-45deg);
+      }
+      .checkbox label:hover::after {
+        opacity: 0.5;
+      }
+      .checkbox input[type=checkbox]:checked + label:after {
+        opacity: 1;
+      }
+      span {
+        font-family: 'Avenir LT Std 45 Book', sans-serif;
+        color: $colorTextPandLabel;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-bottom: 12px;
+        margin-top: 3px;
+      }
+      fieldset {
+        border: none;
+      }
+      .button {
+        width: 200px;
+        height: 45px;
+        > button {
+          width: 200px;
+          height: 45px;
+          background-color: #3397c9;
+          outline: none;
+          border: none;
+          color: white;
+          text-align: center;
+          &:focus {
+            background-color: #83b2ca;
+          }
+        }
+      }
+      &---blockSolid{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+      }
+    }
+  }
+}

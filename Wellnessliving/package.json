@@ -1,0 +1,22 @@
+{
+  "name": "wellnessliving",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "IGOR <riasik123400@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "clean-css": "^4.2.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.9.4",
+    "sass": "^1.14.3"
+  }
+}
