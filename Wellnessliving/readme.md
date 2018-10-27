@@ -1,4 +1,4 @@
-https://iriasyk.github.io/Technical-assignments/Wellnessliving/dist/core.html
+https://iriasyk.github.io/Technical-assignments/Wellnessliving/index/core.html
 -------------
 
 <dl>
