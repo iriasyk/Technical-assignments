@@ -7,7 +7,7 @@ const cleanCSS = require('gulp-clean-css'); // Подключение cleanCSS �
 const autoprefixer = require('gulp-autoprefixer'); // Подключение autoprefixer пакета
 
 gulp.task('autoprefixer', () =>
-    gulp.src('dist/css/main.css')
+    gulp.src('dist/css/*.css')
         .pipe(autoprefixer({
             browsers: ['last 2 versions'],
             cascade: false
@@ -16,7 +16,7 @@ gulp.task('autoprefixer', () =>
 );
 
 gulp.task('minify-css', () => {
-    return gulp.src('dist/css/main.css')
+    return gulp.src('dist/css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(gulp.dest('dist/css'));
 });
