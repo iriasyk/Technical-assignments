@@ -256,3 +256,22 @@
     width: 14% !important;
   }
 }
+
+@media (min-width: 1600px) and (max-width: 2000px) {
+  .middle__block1--part1 .line {
+    width: 73% !important;
+  }
+  .middle__block1--part1 .line__block2--footer {
+    width: 142% !important;
+  }
+  .header .headerIcons__blockIcons {
+    margin-left: 430px !important;
+  }
+  .aside__block2--blockJoin div {
+    flex-wrap: wrap !important;
+    width: 104px !important;
+  }
+  .aside__block2--blockJoin {
+    width: 165px !important;
+  }
+}
