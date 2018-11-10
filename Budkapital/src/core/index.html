@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <header>
+                {% include "src/templates/header.html" %}
+             </header>
+            <nav>
+                {% include "src/templates/nav.html" %}
+            </nav>
+        </div>
+        <section>
+            {% include "src/templates/sectionIMG.html" %}
+        </section>
+        <aside>
+            {% include "src/templates/aside.html" %}
+        </aside>
+        <section>
+            {% include "src/templates/section.html" %}
+        </section>
+        <article>
+            {% include "src/templates/article.html" %}
+        </article>
+        <footer>
+            {% include "src/templates/map.html" %}
+        </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgvkmz0QIibEhJ9IlDRVg-UsuikkSWI5g&callback=initMap"
+            async defer></script>
+</body>
+</html>
