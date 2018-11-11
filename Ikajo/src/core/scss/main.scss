@@ -1,0 +1,319 @@
+@import "variables";
+@import "settings";
+@import "fonts";
+.header{
+  &__part1{
+    &--buttonMenu{
+      display: none;
+    }
+    &--menu{
+      font-family: $fontMontserrat;
+      font-size: $SizeTextMenu;
+      a{
+        text-transform: capitalize;
+        text-decoration: none;
+        color: $colorTextMenu;
+        &:hover, &:focus{
+          color: $colorFocusMenu;
+        }
+      }
+      li{
+        &:hover, &:focus{
+          border-bottom: 2px solid $colorFocusMenu;
+        }
+      }
+    }
+  }
+  &__part2{
+    &--text{
+      color: white;
+      h1, p{
+        span{
+          text-transform: capitalize;
+        }
+      }
+      h1{
+        font-size: $SizeTextH1;
+        font-family: $fontMontserrat;
+      }
+      p{
+        font-family: $fontMontserrat;
+        font-style: italic;
+        font-size: $SizeTextP;
+      }
+    }
+    button.scroll_down {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      height: 50px;
+      width: 30px;
+      bottom: 60px;
+      background-color: transparent;
+      border: 2px solid white;
+      border-radius: 20px;
+      cursor: pointer;
+      outline: none;
+    }
+
+    button.scroll_down:before {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      content: '';
+      width: 6px;
+      height: 6px;
+      margin-left: -3px;
+      background-color: #fff;
+      border-radius: 100%;
+      -webkit-animation: scroll_down_btn-animation 2s infinite;
+      animation: scroll_down_btn-animation 2s infinite;
+      box-sizing: border-box;
+    }
+
+    @keyframes scroll_down_btn-animation {
+      0% {
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      80% {
+        transform: translate(0, 20px);
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+    @-webkit-keyframes scroll_down_btn-animation {
+      0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 0;
+      }
+      40% {
+        opacity: 1;
+      }
+      80% {
+        -webkit-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+        opacity: 0;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+.customer{
+  font-family: $fontMontserrat;
+  &__wrapper{
+    &--hr1{
+      display: flex;
+      justify-content: flex-start;
+      width: 80%;
+      hr{
+        height: 2px;
+      }
+    }
+    &--hr2{
+      margin-left: 21%;
+      hr{
+        height: 2px;
+      }
+    }
+    a{
+      text-decoration: none;
+      border: 1px solid white;
+      &:hover, &:focus{
+        border: 1px solid $colorFocusMenu;
+      }
+    }
+    h1{
+      color: $colorFocusMenu;
+      font-size: $sizeTextH1Contact;
+      text-transform: uppercase;
+    }
+    p{
+      font-size: $sizeTextP1Contact;
+      color: $colorP1Contact;
+      span{
+        text-transform: capitalize;
+      }
+    }
+    .joinForLi p{
+      color: $colorFocusMenu;
+      font-size: $sizeTextP2Contact;
+      font-style: italic;
+      font-weight: bold;
+    }
+    li{
+      display: inline-flex;
+    }
+  }
+}
+.about{
+  font-family: $fontMontserrat;
+  &__wrapper{
+    &--join{
+      display: flex;
+      justify-content: space-between;
+    }
+    &--hr1{
+      display: flex;
+      justify-content: flex-start;
+      width: 87%;
+      hr{
+        height: 2px;
+      }
+    }
+    &--hr2{
+      margin-left: 14%;
+      hr{
+        height: 2px;
+      }
+    }
+    &--pOne{
+      margin-top: 4%;
+    }
+    h1{
+      color: white;
+      text-transform: uppercase;
+      font-size: $sizeTextH1Contact;
+    }
+    p{
+      color: white;
+      font-size: $sizeTextP1Contact;
+    }
+  }
+}
+.contact{
+  font-family: $fontMontserrat;
+  &__wrapper{
+    width: 95%;
+    //height: 650px;
+    &--join{
+      display: flex;
+      justify-content: space-around;
+    }
+    &--join---form{
+      input{
+        display: block;
+        padding-left: 25px;
+        width: calc(552px - 25px);
+        height: 48px;
+        border: 1px solid $colorFocusMenu;
+        border-radius: 10px;
+        margin-bottom: 16px;
+      }
+      textarea{
+        display: block;
+        height: calc(170px - 25px);
+        padding-top: 25px;
+        padding-left: 25px;
+        width: calc(549px - 25px);
+        border: 1px solid $colorFocusMenu;
+        border-radius: 10px;
+      }
+      input[type="button"]{
+        width: 150px;
+        height: 50px;
+        background-color: $colorFocusMenu;
+        border: 1px solid $colorFocusMenu;
+        color: white;
+        fonr-size: $sizeTextP1Contact;
+        margin-left: 74%;
+        margin-top: 4%;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        outline: none;
+        &:focus{
+          border: 1px solid white;
+        }
+      }
+    }
+    &--join---map{
+      width: 555px;
+      height: 380px
+    }
+    &--hr1{
+      display: flex;
+      justify-content: flex-start;
+      width: 85%;
+      hr{
+        height: 2px;
+      }
+    }
+    &--hr2{
+      margin-left: 14%;
+      hr{
+        height: 2px;
+      }
+    }
+    h1{
+      color: $colorFocusMenu;
+      text-transform: uppercase;
+      font-size: $sizeTextH1Contact;
+    }
+    p{
+      color: $colorP1Contact;
+      font-size: $sizeTextP1Contact;
+    }
+  }
+}
+.errorElement {
+  //outline: 1px solid red;
+  outline: none;
+  background-color: red;
+  opacity: 0.5;
+  border: 3px solid $colorFocusMenu;
+}
+.errorText {
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+  font-family: $fontMontserrat;
+}
+.successElement {
+  //outline: 1px solid $colorFocusMenu;
+  outline: none;
+  background-color: white;
+  opacity: 0.5;
+  border: 3px solid $colorFocusMenu;
+}
+.successText {
+  color: $colorFocusMenu;
+  display: flex;
+  justify-content: flex-end;
+  font-family: $fontMontserrat;
+}
+.footer{
+  font-family: $fontMontserrat;
+  background-color: $backGroundColorFooter;
+  &__wrapper{
+    ul{
+      margin-bottom: 4%;
+    }
+    li{
+      display: inline;
+      a{
+        color: white;
+        text-decoration: none;
+        font-size: $sizeTextP1Contact;
+        margin-right: 30px;
+        &:hover, &:focus{
+          text-decoration: underline;
+        }
+      }
+    }
+    span{
+      font-size: $sizeTextFooterSpan;
+      color: white;
+    }
+  }
+}

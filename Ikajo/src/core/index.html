@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebServices</title>
+    <link rel="icon" type="image/png" href="../img/webservices_logo.png" sizes="16x16">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        {% include "src/templates/header.html" %}
+    </header>
+    <section>
+        {% include "src/templates/customer.html" %}
+    </section>
+    <section>
+        {% include "src/templates/about.html" %}
+    </section>
+    <section>
+        {% include "src/templates/contact.html" %}
+    </section>
+    <footer>
+        {% include "src/templates/footer.html" %}
+    </footer>
+    <script src="JS/scroll.js" async></script>
+    <script src="JS/map.js" async></script>
+    <script src="JS/form.js" async></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgvkmz0QIibEhJ9IlDRVg-UsuikkSWI5g&callback=initMap" async></script>
+</body>
+</html>
