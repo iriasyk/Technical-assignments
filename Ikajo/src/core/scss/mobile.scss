@@ -217,14 +217,32 @@
     ul{
       display: none;
     }
+    &__wrapper--hr1{
+      width: 35% !important;
+    }
+    &__wrapper--hr2{
+      margin-left: 71% !important;
+    }
   }
   .about{
     height: auto;
+    &__wrapper--hr1{
+      width: 66% !important;
+    }
+    &__wrapper--hr2{
+      margin-left: 36% !important;
+    }
   }
   .contact{
     height: auto;
     width: 100%;
     &__wrapper{
+      &--hr1{
+        width: 59% !important;
+      }
+      &--hr2{
+        margin-left: 42% !important;
+      }
       width: 100% !important;
       height: auto;
       &--join{
