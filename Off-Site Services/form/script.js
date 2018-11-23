@@ -9,6 +9,9 @@ function addEvent(node, type, callback) {
         });
     }
 }
+
+// функция для определения того, должно ли данное поле быть проверенным(проверка поля, на то, что оно (не) отключено + (не) читается,
+// и на то, что у него есть либо атрибут pattern либо required)
 function shouldBeValidated(field) {
     return (
         !(field.getAttribute("readonly") || field.getAttribute("readonly")) &&
@@ -16,6 +19,8 @@ function shouldBeValidated(field) {
         (field.getAttribute("pattern") || field.getAttribute("required"))
     );
 }
+
+// основная функция проверки, которая проверяет поле и затем выполняет фактическую проверку
 function instantValidation(field) {
     if (shouldBeValidated(field)) {
         let invalid =
@@ -30,9 +35,13 @@ function instantValidation(field) {
         }
     }
 }
+
+//привязка функции проверки к onchange - событию
 addEvent(document, "change", function(e, target) {
     instantValidation(target);
 });
+
+//делегирование для "onchange"
 var fields = [
     document.getElementsByTagName("input")
 ];
