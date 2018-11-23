@@ -189,18 +189,8 @@ label.hamburger {
   right: 18px;
 }
 
-/**
-    SCROLLBAR STYLE FOR IE
-*/
 
 body {
-  scrollbar-base-color: rgb(19, 138, 114);
-  scrollbar-3dlight-color: #fff;
-  scrollbar-highlight-color: #1abc9c;
-  scrollbar-track-color: #fff;
-  scrollbar-arrow-color: #1abc9c;
-  scrollbar-shadow-color: #1abc9c;
-  scrollbar-dark-shadow-color: #1abc9c;
   -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
