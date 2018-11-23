@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Off-Site Services</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+    <div class="general">
+        <header>
+            {% include "src/templates/logo.html" %}
+        </header>
+
+        <div class="general__wrapper">
+            <section>
+                {% include "src/templates/menu.html" %}
+            </section>
+
+            <article>
+                {% include "src/templates/backGroundContainer.html" %}
+            </article>
+
+            <section>
+                {% include "src/templates/sectionInfo.html" %}
+            </section>
+
+            <footer>
+                <section>
+                    <article>
+                        {% include "src/templates/SectionFooterInfo.html" %}
+                    </article>
+
+                    <article>
+                        {% include "src/templates/footer.html" %}
+                    </article>
+                </section>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

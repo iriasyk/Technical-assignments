@@ -1,0 +1,80 @@
+@import "variables";
+@import "settings";
+@import "search";
+@import "mobileMenu";
+.general{
+  font-family: 'Rockwell', sans-serif;
+  background-color: $BGcolorAll;
+}
+.logo h1{
+  text-transform: capitalize;
+  font-size: 88.5px;
+  font-weight: normal;
+  color: #545454;
+}
+.navigation {
+  background-color: white;
+  border: 1px solid #8f8b88;
+  li{
+    display: inline;
+    margin-right: 60px;
+    a{
+      text-transform: capitalize;
+      text-decoration: none;
+      color: #5b5b5b;
+      font-size: 18px;
+      &:hover{
+        color: black;
+      }
+      &:focus{
+        text-decoration: underline;
+        color: black;
+      }
+    }
+  }
+}
+.bgContainer{
+  border: 1px solid #8f8b88;
+}
+
+.joinBlocks{
+  border: 1px solid #8f8b88;
+  &__wrapper{
+    background-color: white;
+    color: $textColor;
+    font-size: $fontSizeText;
+    line-height: 15px;
+    border: 15px solid white;
+    a{
+      color: #000000;
+    }
+    p{
+      text-indent: 31px;
+    }
+  }
+}
+
+.footer-info{
+  border: 1px solid #8f8b88;
+  &__wrapper{
+    background-color: white;
+    &--footer-text{
+      font-size: $fontSizeText;
+      color: $textColor;
+      h2{
+        font-size: 18px;
+      }
+      p{
+        text-indent: 31px;
+        text-align: justify;
+        font-size: 15px;
+      }
+    }
+  }
+}
+.footer{
+  background-color: white;
+  font-size: 14px;
+  color: $textColor;
+  border: 1px solid #8f8b88;
+}
