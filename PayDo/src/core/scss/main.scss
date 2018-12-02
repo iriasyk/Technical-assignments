@@ -1,0 +1,103 @@
+//@import "variables";
+@import "settings";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.general{
+  background-color: #181818;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  li{
+    display: inline;
+    color: #FFFFFF;
+    font-size: 20px;
+    letter-spacing: 0.081713px;
+    text-transform: uppercase;
+    &:last-child{
+      border-bottom: 6px solid #FFFFFF;
+    }
+    &:hover{
+      border-bottom: 6px solid #FFFFFF;
+      cursor: pointer;
+    }
+    &:focus{
+      border-bottom: 6px solid #FFFFFF;
+    }
+  }
+}
+
+.nav{
+  border-bottom: 1px solid #D0D0D0;
+}
+.rectangle-darkgrey{
+  background: #D8D8D8;
+}
+.rectangle {
+  background: #D8D8D8;
+  &__green{
+    background: #7ED321;
+    border: 3px solid #000000;
+  }
+}
+.feedback{
+  line-height: 25px;
+  font-size: 16px;
+  color: #FFFFFF;
+  &__block-comments{
+    h2{
+      line-height: 25px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &--right-block{
+      span{
+        font-size: 14px;
+        letter-spacing: 0.0571991px;
+      }
+      p textarea{
+        border: 1px solid #B9B9B9;
+        background: none;
+        color: #FFFFFF;
+      }
+      p{
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 14px;
+        text-align: justify;
+        letter-spacing: 0.0571991px;
+        span{
+          color: #7ED321;
+        }
+      }
+      .span-day{
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 14px;
+        letter-spacing: 0.0571991px;
+      }
+      a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        font-size: 14px;
+        letter-spacing: 0.0571991px;
+        color: #FFFFFF;
+        &:hover{
+          text-decoration: underline;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+.textarea{
+  background: none;
+  color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+}
