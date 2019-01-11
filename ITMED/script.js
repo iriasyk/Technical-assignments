@@ -31,7 +31,7 @@ let formElement = document.querySelector('#form');
             let inputValue = [inputElements[j].value];
             // console.log(inputValue); //6 input value
 
-            let newInputValueAll = [].push(inputValue);
+            let newInputValueAll = [].push(inputValue[j]);
             console.log(newInputValueAll);
         }
         // let generalDiv = document.querySelector('.general');
