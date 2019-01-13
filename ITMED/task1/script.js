@@ -40,45 +40,39 @@ let formElement = document.querySelector('#form');
         let generalDiv = document.querySelector('.general');
         let newDiv = document.createElement("div");
         newDiv.classList.add("form-control");
-        newDiv.style.marginTop = '10px';
-        newDiv.style.display = 'block';
-        newDiv.style.height = '100%';
-        newDiv.style.width = '50%';
         generalDiv.appendChild(newDiv);
 
-        let spanForSort = document.createElement('span');
-        newDiv.appendChild(spanForSort);
-        spanForSort.style.display = 'flex';
-        let textForSort = document.createTextNode(`1) The value is in the order of growth: ${sortValues};`);
-        spanForSort.appendChild(textForSort);
+        (function () {
+            let spanForSort = document.createElement('span');
+            newDiv.appendChild(spanForSort);
+            spanForSort.style.display = 'flex';
+            let textForSort = document.createTextNode(`1) The value is in the order of growth: ${sortValues};`);
+            spanForSort.appendChild(textForSort);
+        })();
 
-        let valuesPaired = Array.from(inputElements)
-            .map(input => input.value % 2 == 0 ? input.value : 0); //[0, "2", 0, "4", 0, "6"]
-        let valuesPairedJustNumber = valuesPaired.map(Number); // [0, 2, 0, 4, 0, 6]
+        let sum = Array.from(inputElements)
+            .map(value => +value.value)
+            .filter(value => value % 2 === 0)
+            .reduce((sum, value) => sum + value);
 
-        function sumValuesPaired(arrPaired){
-            let emptySum = 0;
-            for(let i = 0; i < arrPaired.length; i++){
-                emptySum += arrPaired[i];
-            }
-            return emptySum;
-        }
+        (function () {
+            let spanForSum = document.createElement('span');
+            newDiv.appendChild(spanForSum);
+            spanForSum.style.display = 'flex';
+            let textForSum = document.createTextNode(`2) The sum of the numbers that turned out to be paired: ${sum};`);
+            spanForSum.appendChild(textForSum);
+        })();
 
-        let spanForSum = document.createElement('span');
-        newDiv.appendChild(spanForSum);
-        spanForSum.style.display = 'flex';
-        let textForSum = document.createTextNode(`2) The sum of the values of paired positions in a sorted array: ${sumValuesPaired(valuesPairedJustNumber)};`);
-        spanForSum.appendChild(textForSum);
+        let maxValue = Math.max(...values);
+        let minValue = Math.min(...values);
 
-        let maxValue = Math.max.apply(null, values);
-        let minValue = Math.min.apply(null, values);
-
-        let spanForMinMax = document.createElement('span');
-        newDiv.appendChild(spanForMinMax);
-        spanForMinMax.style.display = 'flex';
-        let textForMinMax = document.createTextNode(`3) Max value = ${maxValue}; Min value = ${minValue};`);
-        spanForMinMax.appendChild(textForMinMax);
-
+        (function () {
+            let spanForMinMax = document.createElement('span');
+            newDiv.appendChild(spanForMinMax);
+            spanForMinMax.style.display = 'flex';
+            let textForMinMax = document.createTextNode(`3) Max value = ${maxValue}; Min value = ${minValue};`);
+            spanForMinMax.appendChild(textForMinMax);
+        })();
 
         event.preventDefault();
     });

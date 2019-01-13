@@ -17,3 +17,12 @@ h1{
 .general{
     padding-left: 50px;
 }
+.form-control{
+    margin-top: 10px;
+    display: block;
+    height: 100%;
+    width: 50%;
+}
+label{
+    margin-top: 15px;
+}
