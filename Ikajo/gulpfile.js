@@ -1,5 +1,5 @@
 // 'use strict';
-var gulp = require('gulp'); // Подключение Gulp
+let gulp = require('gulp'); // Подключение Gulp
 const sass = require('gulp-sass'); // Подключение Sass пакета
 const watch = require('gulp-watch'); // Подкючение Watch пакета
 const nunjucksRender = require('gulp-nunjucks-render'); // Подключение nunjucksRender пакета
