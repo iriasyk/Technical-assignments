@@ -60,7 +60,7 @@ function addEvent(node, type, callback) {
     }
 }
 
-функция для определения того, должно ли данное поле быть проверенным(проверка поля, на то, что оно (не) отключено + (не) читается,
+// функция для определения того, должно ли данное поле быть проверенным(проверка поля, на то, что оно (не) отключено + (не) читается,
 и на то, что у него есть либо атрибут pattern либо required)
 
 function shouldBeValidated(field) {
@@ -71,7 +71,7 @@ function shouldBeValidated(field) {
     );
 }
 
-основная функция проверки, которая проверяет поле и затем выполняет фактическую проверку
+// основная функция проверки, которая проверяет поле и затем выполняет фактическую проверку
 
 function instantValidation(field) {
     if (shouldBeValidated(field)) {
@@ -88,13 +88,13 @@ function instantValidation(field) {
     }
 }
 
-привязка функции проверки к onchange - событию
+// привязка функции проверки к onchange - событию
 
 addEvent(document, "change", function(e, target) {
     instantValidation(target);
 });
 
-делегирование для "onchange"
+// делегирование для "onchange"
 
 var fields = [
     document.getElementsByTagName("input")
