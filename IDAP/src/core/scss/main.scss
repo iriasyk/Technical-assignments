@@ -230,8 +230,9 @@ ul {
       display: flex;
       justify-content: space-between;
       border-top: 1px solid #d3d7da;
-      padding-top: 0.5%;
-      padding-bottom: 0.5%;
+      //padding-top: 0.5%;
+      //padding-bottom: 0.5%;
+      height: 85px;
       border-bottom: 1px solid #d3d7da;
 
       &--link{
