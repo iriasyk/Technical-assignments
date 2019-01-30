@@ -1,0 +1,53 @@
+@mixin span_property {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+
+@mixin div_property{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@mixin div_property_with_relative{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+@mixin button_header_property{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@mixin main_property{
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  height: auto; //490px
+}
+
+@mixin button_search{
+  button{
+    @include div_property;
+    position: relative;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    &:hover, :focus{
+      background-color: $colorBorderLeft;
+    }
+    span{
+      @include span_property;
+    }
+  }
+}

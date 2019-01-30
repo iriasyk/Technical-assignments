@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDAP</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+
+    <div class="general-container">
+        <aside>
+            {% include "src/templates/sidebar.html" %}
+        </aside>
+
+        <article>
+            <div class="article-content">
+                <header>
+                    {% include "src/templates/header.html" %}
+                </header>
+
+
+                <main>
+                    <div class="main-container">
+                        <section>
+                            {% include "src/templates/content-middle.html" %}
+                        </section>
+
+                        <aside>
+                            {% include "src/templates/content-right.html" %}
+                        </aside>
+                    </div>
+                </main>
+            </div>
+        </article>
+
+    </div>
+
+</body>
+</html>
